@@ -1,0 +1,39 @@
+2025-05-07 21:25:20,092 INFO worker.py:1879 -- Started a local Ray instance. View the dashboard at http://127.0.0.1:8265 
+2025-05-07 21:25:20,784 - INFO - Ray initialized.
+2025-05-07 21:25:20,817 - INFO - CentralServer actor created/retrieved.
+2025-05-07 21:25:20,838 - INFO - Created 3 WorkerNode actors.
+2025-05-07 21:25:20,892 - INFO - Registration result: Worker laptop_0 registered successfully.
+2025-05-07 21:25:20,892 - INFO - Registration result: Worker laptop_1 registered successfully.
+2025-05-07 21:25:20,892 - INFO - Registration result: Worker laptop_2 registered successfully.
+2025-05-07 21:25:21,898 - INFO - Submitted main task main_60b716df to CentralServer.
+2025-05-07 21:25:21,900 - INFO - Polling Task Status (main_60b716df): {'main_task_id': 'main_60b716df', 'description': 'Calculate squares and simulate resource needs', 'total_sub_tasks': 10, 'completed_sub_tasks': 0, 'failed_sub_tasks': 0, 'pending_or_running': 10, 'overall_status': 'in_progress'}
+(WorkerNode pid=80617) WorkerNode laptop_1: Simulating failure for sub_task main_60b716df_sub1_7a30ab29
+(WorkerNode pid=80617) WorkerNode laptop_1: Error executing sub_task main_60b716df_sub1_7a30ab29: Simulated failure on laptop_1 for main_60b716df_sub1_7a30ab29
+(CentralServer pid=80619) No suitable worker found for task needing 5.4GB RAM from available workers.
+(CentralServer pid=80619) CentralServer: Sub_task main_60b716df_sub1_7a30ab29 failed on laptop_1. Error: Simulated failure on laptop_1 for main_60b716df_sub1_7a30ab29
+2025-05-07 21:25:26,906 - INFO - Polling Task Status (main_60b716df): {'main_task_id': 'main_60b716df', 'description': 'Calculate squares and simulate resource needs', 'total_sub_tasks': 10, 'completed_sub_tasks': 1, 'failed_sub_tasks': 0, 'pending_or_running': 9, 'overall_status': 'in_progress'}
+2025-05-07 21:25:31,917 - INFO - Polling Task Status (main_60b716df): {'main_task_id': 'main_60b716df', 'description': 'Calculate squares and simulate resource needs', 'total_sub_tasks': 10, 'completed_sub_tasks': 2, 'failed_sub_tasks': 0, 'pending_or_running': 8, 'overall_status': 'in_progress'}
+2025-05-07 21:25:36,924 - INFO - Polling Task Status (main_60b716df): {'main_task_id': 'main_60b716df', 'description': 'Calculate squares and simulate resource needs', 'total_sub_tasks': 10, 'completed_sub_tasks': 4, 'failed_sub_tasks': 0, 'pending_or_running': 6, 'overall_status': 'in_progress'}
+2025-05-07 21:25:41,931 - INFO - Polling Task Status (main_60b716df): {'main_task_id': 'main_60b716df', 'description': 'Calculate squares and simulate resource needs', 'total_sub_tasks': 10, 'completed_sub_tasks': 8, 'failed_sub_tasks': 0, 'pending_or_running': 2, 'overall_status': 'in_progress'}
+2025-05-07 21:25:46,938 - INFO - Polling Task Status (main_60b716df): {'main_task_id': 'main_60b716df', 'description': 'Calculate squares and simulate resource needs', 'total_sub_tasks': 10, 'completed_sub_tasks': 10, 'failed_sub_tasks': 0, 'pending_or_running': 0, 'overall_status': 'completed_successfully'}
+2025-05-07 21:25:46,938 - INFO - Main task main_60b716df reached terminal state: completed_successfully
+2025-05-07 21:25:46,941 - INFO - 
+--- FINAL RESULTS for main_60b716df ---
+2025-05-07 21:25:46,941 - INFO - Status Summary: {'main_task_id': 'main_60b716df', 'description': 'Calculate squares and simulate resource needs', 'total_sub_tasks': 10, 'completed_sub_tasks': 10, 'failed_sub_tasks': 0, 'pending_or_running': 0, 'overall_status': 'completed_successfully'}
+2025-05-07 21:25:46,950 - INFO - Simulating Worker laptop_0 running performance test...
+2025-05-07 21:25:49,128 - INFO - Requested capability update for laptop_0 on server.
+2025-05-07 21:25:50,133 - INFO - Cluster status after capability update: [{'id': 'laptop_1', 'status': 'idle', 'capabilities': {'cpu_power': 1.93, 'memory_gb': 16, 'last_updated': 1746624320.88144}, 'last_heartbeat': 1746624320.89052}, {'id': 'laptop_0', 'status': 'idle', 'capabilities': {'cpu_power': 0.94, 'memory_gb': 9, 'last_updated': 1746624349.1240408}, 'last_heartbeat': 1746624320.890887}, {'id': 'laptop_2', 'status': 'idle', 'capabilities': {'cpu_power': 1.16, 'memory_gb': 5, 'last_updated': 1746624320.8845382}, 'last_heartbeat': 1746624320.891724}]
+2025-05-07 21:25:50,133 - INFO - 
+--- Simulating adding a new node ---
+2025-05-07 21:25:50,219 - INFO - New node desktop_new registered.
+2025-05-07 21:25:51,228 - INFO - Cluster status after adding node: [{'id': 'laptop_1', 'status': 'idle', 'capabilities': {'cpu_power': 1.93, 'memory_gb': 16, 'last_updated': 1746624320.88144}, 'last_heartbeat': 1746624320.89052}, {'id': 'laptop_0', 'status': 'idle', 'capabilities': {'cpu_power': 0.94, 'memory_gb': 9, 'last_updated': 1746624349.1240408}, 'last_heartbeat': 1746624320.890887}, {'id': 'laptop_2', 'status': 'idle', 'capabilities': {'cpu_power': 1.16, 'memory_gb': 5, 'last_updated': 1746624320.8845382}, 'last_heartbeat': 1746624320.891724}, {'id': 'desktop_new', 'status': 'idle', 'capabilities': {'cpu_power': 1.51, 'memory_gb': 16, 'last_updated': 1746624350.2084281}, 'last_heartbeat': 1746624350.21502}]
+2025-05-07 21:25:51,228 - INFO - 
+--- Simulating a worker failure ---
+2025-05-07 21:25:51,231 - INFO - Attempting to 'kill' worker: laptop_0. Subsequent tasks for it should fail over.
+2025-05-07 21:25:51,231 - INFO - Setting worker laptop_0 status to 'idle' on server before submitting failure test task.
+2025-05-07 21:25:53,239 - INFO - Killed worker actor laptop_0. The CentralServer should detect this on next interaction or task completion check.
+2025-05-07 21:25:53,239 - INFO - Waiting for system to handle worker failure and re-schedule tasks...
+2025-05-07 21:25:59,245 - INFO - Status of failure test task after worker kill: {'main_task_id': 'main_86295ab3', 'description': 'Failure Test Task', 'total_sub_tasks': 1, 'completed_sub_tasks': 1, 'failed_sub_tasks': 0, 'pending_or_running': 0, 'overall_status': 'completed_successfully'}
+2025-05-07 21:25:59,245 - INFO - Fault tolerance test: Task was successfully rescheduled and completed after worker failure.
+2025-05-07 21:25:59,245 - INFO - Shutting down Ray...
+2025-05-07 21:26:00,609 - INFO - Ray shut down.
